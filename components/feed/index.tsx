@@ -25,14 +25,14 @@ const Feed:FC<FeedProps> = ({tweets: propTweets}) => {
     })
   }
   return (
-    <div className="border-x">
+    <div className="border-x max-h-screen overflow-scroll">
         <div className="flex items-center justify-between">
             <h1 className='p-5 pb-0 text-xl font-bold'>Home</h1>
             <RefreshIcon onClick={handleRefresh} className='w-8 h-8 cursor-pointer text-twitter mr-5 mt-5 transition-all duration-500 ease-out hover:rotate-180 active:scale-125'/>
         </div>
         {/* tweetbox */}
         <div>
-            <TweetBox />
+            <TweetBox  setTweets={setTweets}/>
         </div>
 
 
