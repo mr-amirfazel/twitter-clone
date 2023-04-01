@@ -3,8 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Sidebar from '../components/Sidebar'
-import Feed from '../components/feed/Feed'
-import Widgets from '../components/widgets/Widgets'
+import Feed from '../components/feed'
+import Widgets from '../components/widgets'
 
 const Home: NextPage = () => {
   return (
