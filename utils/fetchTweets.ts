@@ -1,4 +1,5 @@
 import { Tweet } from "../typings";
+import { tweets as Tcol } from "../constants/constants";
 
 export const fetchTweets = async () =>{
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getTweets`)
@@ -6,6 +7,6 @@ export const fetchTweets = async () =>{
     const data = await res.json();
     const tweets: Tweet[] = data.tweets;
 
-
-    return tweets
+    console.log('tweets:', tweets);
+    return Tcol
 }
