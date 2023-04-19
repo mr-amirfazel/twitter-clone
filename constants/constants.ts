@@ -1,4 +1,4 @@
-import { Tweet } from "../typings";
+import { Tweet, Comment } from "../typings";
 
 export const tweets: Tweet[] = [
     {
@@ -30,11 +30,46 @@ export const tweets: Tweet[] = [
         image: "https://m.media-amazon.com/images/I/61GDn0-MvwL._AC_SY679_.jpg",
         profileImg: "https://image-cdn.essentiallysports.com/wp-content/uploads/328390749_745585246733689_2597549285352027409_n-1-640x853.jpg",
         text: "Remember to use whey and workout guys :))",
-        username: "alex wassabi",
+        username: "Mike",
         _createdAt: Date.now().toFixed().toString(),
         _id: "PI5AeMardsJ8w7aqGVtQpP",
         _rev: "PI5AeMaxdhJ8w7aqGVtQpW",
         _type: "tweet",
         _updatedAt: Date.now().toFixed().toString() ,
     }
+]
+
+
+export const Comments: Comment[] = [
+    {
+    comment: "Dude Use creatine",
+    username: "Cbum",
+    profileImg: "https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQmDr4a-LXpMTEVIM5sqkvuD9tkr5RyaEjtZHXJurlrw7HP7KnDv8lN1UCNV5IXdX9hx5B9YU7w3yO6hRQ",
+    tweetId: "PI5AeMardsJ8w7aqGVtQpP",
+    _id: "PI5AeMardsJ8w7aqGVtQaP",
+    _createdAt: Date.now().toFixed().toString(),
+    _rev:"PI5AeMaadsJ8w7aqGVtQaP",
+    _type: 'comment',
+    _updatedAt: Date.now().toFixed().toString(),
+    tweet: {
+        _ref: "PI5AeMaodsJ8w7aqGVtQpP",
+        _type: "reference"
+    }
+    },
+     {
+    comment: "Also dont skip leg Day boys",
+    username: "TomP",
+    profileImg: "https://upload.wikimedia.org/wikipedia/commons/b/b7/13_Maggio_1995_Paolo_Tassetto_con_Tom_Platz%2C_Mr._Universo_%28cropped%29.JPG",
+    tweetId: "PI5AeMardsJ8w7aqGVtQpP",
+    _id: "PI5AeMardsJ8w7aqGVtQaP",
+    _createdAt: Date.now().toFixed().toString(),
+    _rev:"PI5AeMaadsJ8w7aqGVtQaP",
+    _type: 'comment',
+    _updatedAt: Date.now().toFixed().toString(),
+    tweet: {
+        _ref: "PI5AeMaodsJ8w7aqGVtQpP",
+        _type: "reference"
+    }
+    },
+    
 ]

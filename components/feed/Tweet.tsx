@@ -105,7 +105,7 @@ const TweetComponent:FC<Tweetprops> = ({tweet}) => {
                             <div>
                                 <div className='flex items-center space-x-1'>
                                     <p className='mr-1 font-bold'>{comment.username}</p>
-                                    <p className='hidden text-sm text-gray-500 lg:inline'>@{tweet.username.replace(/\s+/g, '').toLowerCase()}.</p>
+                                    <p className='hidden text-sm text-gray-500 lg:inline'>@{comment.username.replace(/\s+/g, '').toLowerCase()}.</p>
                                 </div>
 
                                 <TimeAgo date={comment._createdAt} className='text-sm text-gray-500' />

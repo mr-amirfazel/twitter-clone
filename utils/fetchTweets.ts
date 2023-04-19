@@ -8,5 +8,6 @@ export const fetchTweets = async () =>{
     const tweets: Tweet[] = data.tweets;
 
     console.log('tweets:', tweets);
-    return Tcol
+    return tweets;
+    // return Tcol
 }
