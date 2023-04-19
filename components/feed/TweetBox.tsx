@@ -98,7 +98,9 @@ const TweetBox:FC<TweetBoxProps> = ({setTweets}) => {
               <LocationMarkerIcon className="h-5 w-5" />
             </div>
 
-            <button onClick={handleSubmit} disabled={!input} className="bg-twitter px-5 py-2 font-bold text-white rounded-full disabled:opacity-40">
+            <button 
+            // onClick={handleSubmit} 
+            disabled={!input} className="bg-twitter px-5 py-2 font-bold text-white rounded-full disabled:opacity-40">
               Tweet
             </button>
           </div>

@@ -31,12 +31,12 @@ const Home:FC<Props> = ({tweets}) => {
         </div>
 
         <div className="col-span-7 lg:col-span-5">
-          {/* <Feed tweets={tweets} /> */}
+          <Feed tweets={tweets} />
         </div>
 
 
         <div className="col-span-2 hidden lg:inline">
-          {/* <Widgets /> */}
+          <Widgets />
         </div>
       </main>
 
